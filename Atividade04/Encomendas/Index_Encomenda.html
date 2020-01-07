@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset=utf-8 />
+ <title>Encomendar Bolo</title>
+ </head>
+ <body>
+ <header>
+ <h1>Pães Doces e Bolos</h1>
+ <ul>
+ <li><a href="../Index.html">Página Principal</a></li>
+ <li><a href="Index_Encomenda.html">Encomendar Bolo</a></li>
+ </ul>
+ </header>
+ <main>
+ <h2>Encomendar Bolo</h2>
+ <form method="get">
+ Nome: <input type="text" name="nome" size="35" maxlength="35"
+ placeholder="Informe o nome" autofocus />
+ DDD ( <input type="text" name="ddd" size="2" maxlength="2" placeholder="DDD" /> )
+ Telefone: <input type="text" name="tel" size="10" maxlength="10" placeholder="Telefone" />
+ <br /> <br />
+ <table border>
+ <caption> Bolos </caption>
+ <tr>
+ <th><img src="../Imagens/Bolo01.png" alt="Bolo de Chocolate" width="200" /></th>
+<th><img src="../Imagens/Bolo02.png" alt="Bolo de Frutas" width="200" /></th>
+<th><img src="../Imagens/Bolo03.png" alt="Bolo Misto" width="200" /></th>
+ </tr>
+ <tr>
+ <th>Chocolate</th><th>Frutas</th><th>Misto</th>
+ </tr>
+ </table>
+ <br />
+ Sabor: <select name="sabor">
+ <option value="null" selected="selected" disabled>Escolha... </option>
+<option value="choco">Chocolate</option>
+<option value="frutas">Frutas</option>
+<option value="misto">Misto</option>
+ </select>
+ Tipo: <input type="radio" name="tipo" value="simp" /> Simples
+ <input type="radio" name="tipo" value="decor" /> Decorado
+ <br /><br />
+ Tamanho: <input type="number" name="tam" min="1" max="10" /> kg
+ <input type="checkbox" name="diet" value="Sim" />Diet?
+ <br /><br />
+ Observações:
+ <br />
+ <textarea name="obs" rows="3" cols="80" placeholder="Observações sobre o Pedido" ></textarea>
+ <br /> <br />
+ <input type="submit" value="Enviar Pedido" >
+ <input type="reset" value="Limpar">
+ </form>
+ </main>
+ </body>
+</html>
